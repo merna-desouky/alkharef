@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مجموعة الخريف</title>
+    <!-- bootstrap style -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Start of intro -->
+    <div class="devo-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav>
+              <div class="nav-content">
+                <a href="./Index.html" class="logo"
+                  ><img src="./assets/logo_inner_page 1.svg"
+                /></a>
+                <div class="pages">
+                  <ul class="pages-content">
+                    <li>
+                      <a aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <a
+                          class="dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          من نحن
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="./pages/Services.html"> منتجاتنا</a>
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <a
+                          class="dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          المركز الاعلامي
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <div class="vl"></div>
+
+                    <li>
+                      <button><i class="fa-solid fa-globe"></i> EN</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-menu">
+                  <a
+                    href="javascript:void(0);"
+                    class="myicon1"
+                    onclick="myToggle()"
+                  >
+                    <i
+                      onclick="myFunction()"
+                      id="icon1"
+                      class="icon1 fa-solid fa-bars"
+                      style="color: #ffffff"
+                    ></i>
+                  </a>
+                  <div id="my-menu" class="menu">
+                    <a
+                      href="javascript:void(0);"
+                      class="myicon2"
+                      onclick="myToggle()"
+                    >
+                      <i
+                        onclick="myFunction()"
+                        id="icon2"
+                        class="icon2 fa-solid fa-xmark"
+                        style="color: #ffffff"
+                      ></i>
+                    </a>
+                    <div class="overlay"></div>
+                    <ul class="my-list">
+                      <li>
+                        <a aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="./pages/aboutUs.html">About Us</a>
+                      </li>
+                      <li>
+                        <a href="./pages/Services.html"> Our Services</a>
+                      </li>
+                      <li>
+                        <a href="./pages/ContactUs.html"> Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="title">
+          <h1 class="mb-4">تميزنا من خلال شركاتنا في النجاح</h1>
+          <span class="mb-5"
+            >منذ بداية تأسيسنا في العام 1957، ونحن نعمل بشكل دؤوب وباستمرار في
+            مجموعة الخريِّف لكي نصبح شركة متعددة النشاطات تتميز بالقوة
+            والنجاح.</span
+          >
+          <button>تواصل معنا</button>
+        </div>
+        <div class="bottom-bar">
+          <span>تابعنا على وسائل التواصل الاجتماعي</span
+          ><i class="fa-brands fa-square-facebook"></i
+          ><i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End of intro -->
+    <!-- Start of about sec -->
+    <div class="devo-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="about-content">
+              <img src="./assets/Group 35.png" class="img-fluid" />
+
+              <div class="about-text">
+                <span>من نحن</span>
+                <h3>تميزنا من خلال شركاتنا في النجاح</h3>
+                <p class="mb-5">
+                  منذ بداية تأسيسنا في العام 1957، ونحن نعمل بشكل دؤوب وباستمرار
+                  في مجموعة الخريِّف لكي نصبح شركة متعددة النشاطات تتميز بالقوة
+                  والنجاح.إلى جانب الريادة التي نتمتع بها في المملكة العربية
+                  السعودية والمنطقة، والسمعة الذهبية التي حظينا بها والتي تتمثل
+                  بجودة منتجاتنا وخدمات ما بعد البيع ، فإننا اليوم نتمتع بحضور
+                  واسع على مستوى العالم، عبر نشاطاتنا التشغيلية في أكثر من 40
+                  بلداً في 6 قارات.
+                </p>
+                <button>اعرف المزيد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of about sec -->
+
+    <!-- Start of fields -->
+    <div class="devo-fields">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-5">
+              كما تتألف مجموعتنا من 4 وحدات عمل استراتيجية تشمل المجالات الآتية
+              :
+            </div>
+            <div class="fields-content">
+              <div>
+                <img src="./assets/Group 16.png" />
+                <div>النفط وزيوت التشحيم</div>
+              </div>
+              <div>
+                <img src="./assets/Group 17.png" />
+                <div>أنظمة الآلات والمعدات</div>
+              </div>
+              <div>
+                <img src="./assets/Group 18.png" />
+                <div>خدمات التعاقد</div>
+              </div>
+              <div>
+                <img src="./assets/Group 19.png" />
+                <div>الطباعة والورق</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of fields -->
+    <!-- start of success sec -->
+    <div class="devo-success">
+      <div class="container">
+        <div class="row">
+          <div class="success-content">
+            <div class="col-lg-5 col-sm-12 col-xs-12">
+              <h3>تميزنا من خلال شركاتنا في النجاح</h3>
+            </div>
+            <div class="col-lg-7 col-sm-12 col-xs-12">
+              <div class="myimgs">
+                <div class="row gy-4">
+                  <div class="col-6">
+                    <img src="./assets/1.png" class="img-fluid" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/2.png" class="img-fluid" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/3.png" class="img-fluid" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/2.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of success sec -->
+
+    <!-- start of products -->
+    <div class="devo-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <span>منتجاتنا</span>
+              <h3>شركاؤنا يساهموا في نجاح منظمتنا</h3>
+            </div>
+            <div class="products-content">
+              <div class="product-card">
+                <img src="./assets/h2-img-2.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>تقنية المياه و الطاقة</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./assets/h2-img-3.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>البحرية ومعدات الغوص</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./assets/h2-img-4.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>الحلول الزراعية</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./assets/h2-img-5.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>زيوت التشحيم</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of products -->
+
+    <!-- start of partners -->
+    <div class="devo-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <span>منتجاتنا</span>
+              <h3>شركاؤنا يساهموا في نجاح منظمتنا</h3>
+            </div>
+            <div class="partners-content">
+              <div class="grid-container">
+                <div class="grid-item">
+                  <img src="./assets/div.png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (1).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (2).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (3).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (4).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (5).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (6).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (7).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div (8).png" class="img-fluid" />
+                </div>
+                <div class="grid-item">
+                  <img src="./assets/div.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of partners -->
+
+    <!-- start of products -->
+    <div class="devo-blog">
+      <div class="container">
+        <div class="title">
+          <span>منتجاتنا</span>
+          <h3>شركاؤنا يساهموا في نجاح منظمتنا</h3>
+        </div>
+
+        <div class="blog-content">
+          <div class="row gx-lg-5 gy-5">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="blog-card">
+                <img src="./assets/h2-blog-img-1.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>تقنية المياه و الطاقة</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="blog-card">
+                <img src="./assets/h2-blog-img-2.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>البحرية ومعدات الغوص</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="blog-card">
+                <img src="./assets/h2-blog-img-3.jpg.png" class="img-fluid" />
+                <div>
+                  <h5>الحلول الزراعية</h5>
+                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of products -->
+    <!-- Start of footer -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row gx-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-footer">
+                <img src="./assets/logo_inner_page 1.svg" class="mb-5" />
+                <p>
+                  منذ بداية تأسيسنا في العام 1957، ونحن نعمل بشكل دؤوب وباستمرار
+                  في مجموعة الخريِّف لكي نصبح شركة متعددة النشاطات تتميز بالقوة
+                  والنجاح.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-footer">
+                <h4 class="mb-4">تواصل معنا</h4>
+                <div>
+                  <span class="num">01</span>
+                  <div>
+                    صندوق بريد 42852 الخبر 11551، المملكة العربية السعودية
+                  </div>
+                </div>
+                <div>
+                  <span class="num">01</span>
+                  <div>
+                    صندوق بريد 42852 الخبر 11551، المملكة العربية السعودية
+                  </div>
+                </div>
+                <div>
+                  <span class="num">01</span>
+                  <div>
+                    صندوق بريد 42852 الخبر 11551، المملكة العربية السعودية
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-footer">
+                <h4 class="mb-4">النشرة الإخبارية</h4>
+                <span
+                  >اشترك الآن في النشرة الأخبارية ليصلك جميع العروض وأخبار
+                  مجموعة الخريف!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="copyright">Copyright © 2022 TecsPro. All rights reserved.</p>
+      </div>
+    </div>
+    <!-- End of footer -->
+
+    <!-- js for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      function myToggle() {
+        var list = document.getElementById("my-menu");
+        if (list.classList.contains("active")) {
+          list.classList.remove("active");
+          document.body.style.overflow = "scroll";
+        } else {
+          list.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+      }
+    </script>
+    <script>
+      function myFunction() {
+        var myicon1 = document.getElementById("icon1");
+        if (myicon1.style.opacity === "0") {
+          myicon1.style.opacity = "1";
+        } else {
+          myicon1.style.opacity = "0";
+        }
+        var myicon2 = document.getElementById("icon2");
+        if (myicon2.style.opacity === "1") {
+          myicon2.style.opacity = "0";
+        } else {
+          myicon2.style.opacity = "1";
+        }
+      }
+    </script>
+  </body>
+</html>
