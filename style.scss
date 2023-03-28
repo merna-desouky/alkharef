@@ -33,6 +33,7 @@ a {
   background-image: url(./assets/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   .nav-content {
     display: flex;
     justify-content: space-between;
@@ -157,7 +158,7 @@ a {
   .title {
     display: flex;
     flex-direction: column;
-    padding: 200px 0px;
+    padding: 120px 0px;
     color: var(--primary-color);
     padding-inline-end: 750px;
     span {
@@ -238,10 +239,11 @@ a {
     }
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .devo-intro {
+    height: 80vh;
     .title {
-      padding: 150px 0px;
+      padding: 60px 0px;
     }
   }
 }
@@ -618,6 +620,7 @@ a {
   background-image: url(./assets/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   .nav-content {
     display: flex;
     justify-content: space-between;
@@ -827,7 +830,6 @@ a {
 }
 @media (max-width: 1000px) {
   .brief-intro {
-    background-size: 100% 100%;
     .title {
       padding: 100px 0px;
     }

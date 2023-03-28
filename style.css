@@ -34,6 +34,7 @@ a {
   background-image: url(./assets/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .devo-intro .nav-content {
   display: flex;
@@ -146,7 +147,7 @@ a {
 .devo-intro .title {
   display: flex;
   flex-direction: column;
-  padding: 200px 0px;
+  padding: 120px 0px;
   color: var(--primary-color);
   -webkit-padding-end: 750px;
           padding-inline-end: 750px;
@@ -215,9 +216,12 @@ a {
     left: -15px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .devo-intro {
+    height: 80vh;
+  }
   .devo-intro .title {
-    padding: 150px 0px;
+    padding: 60px 0px;
   }
 }
 .devo-about {
@@ -564,6 +568,7 @@ a {
   background-image: url(./assets/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .brief-intro .nav-content {
   display: flex;
@@ -745,9 +750,6 @@ a {
   }
 }
 @media (max-width: 1000px) {
-  .brief-intro {
-    background-size: 100% 100%;
-  }
   .brief-intro .title {
     padding: 100px 0px;
   }
