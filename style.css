@@ -118,12 +118,12 @@ a {
   border-left: 4px solid var(--text-secondary-color);
   height: 30px;
   border-radius: 5px;
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
 }
 .devo-intro .nav-content .pages .pages-content li {
-  -webkit-margin-end: 25px;
-          margin-inline-end: 25px;
+  -webkit-margin-start: 25px;
+          margin-inline-start: 25px;
 }
 .devo-intro .nav-content .pages .pages-content li a {
   color: var(--primary-color);
@@ -176,8 +176,8 @@ a {
 }
 .devo-intro .bottom-bar i {
   color: var(--text-secondary-color);
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
   font-size: 25px;
   transition: all 0.2s ease-in-out;
 }
@@ -298,6 +298,8 @@ a {
 .devo-success {
   margin-bottom: 90px;
   background-image: url("./assets/Group 34.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .devo-success .success-content {
   display: flex;
@@ -484,12 +486,13 @@ a {
           margin-inline-end: 60px;
   line-height: 35px;
 }
-.footer .footer-content .single-footer div {
+.footer .footer-content .single-footer .contacts {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  color: var(--text-third-color);
 }
-.footer .footer-content .single-footer div .num {
+.footer .footer-content .single-footer .contacts .num {
   background-color: var(--secondary-btn-color);
   color: var(--primary-color);
   border-radius: 50%;
@@ -497,6 +500,30 @@ a {
   -webkit-margin-end: 5px;
           margin-inline-end: 5px;
   text-align: center;
+}
+.footer .footer-content .single-footer .join-us {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-content .single-footer .join-us input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-third-color);
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.footer .footer-content .single-footer .join-us input:focus-visible {
+  outline: none;
+}
+.footer .footer-content .single-footer .join-us a {
+  color: var(--primary-color);
+}
+.footer .footer-content .single-footer .join-us a i {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.footer .footer-content .single-footer .join-us a:hover {
+  color: var(--text-third-color);
 }
 @media (max-width: 768px) {
   .footer .footer-content .single-footer {

@@ -124,10 +124,10 @@ a {
           border-left: 4px solid var(--text-secondary-color);
           height: 30px;
           border-radius: 5px;
-          margin-inline-end: 10px;
+          margin-inline-start: 10px;
         }
         li {
-          margin-inline-end: 25px;
+          margin-inline-start: 25px;
           a {
             color: var(--primary-color);
             transition: all 0.2s ease-in-out;
@@ -183,7 +183,7 @@ a {
     }
     i {
       color: var(--text-secondary-color);
-      margin-inline-end: 10px;
+      margin-inline-start: 10px;
       font-size: 25px;
       transition: all 0.2s ease-in-out;
     }
@@ -326,6 +326,8 @@ a {
 .devo-success {
   margin-bottom: 90px;
   background-image: url("./assets/Group\ 34.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   .success-content {
     display: flex;
     justify-content: space-between;
@@ -529,10 +531,12 @@ a {
         margin-inline-end: 60px;
         line-height: 35px;
       }
-      div {
+      .contacts {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        padding-bottom: 15px;
+        color: var(--text-third-color);
+
         .num {
           background-color: var(--secondary-btn-color);
           color: var(--primary-color);
@@ -540,6 +544,29 @@ a {
           padding: 15px 17px;
           margin-inline-end: 5px;
           text-align: center;
+        }
+      }
+      .join-us {
+        display: flex;
+        flex-direction: column;
+        input {
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid var(--text-third-color);
+          color: var(--primary-color);
+          margin-bottom: 30px;
+        }
+        input:focus-visible {
+          outline: none;
+        }
+        a {
+          color: var(--primary-color);
+          i {
+            margin-inline-start: 10px;
+          }
+        }
+        a:hover {
+          color: var(--text-third-color);
         }
       }
     }
