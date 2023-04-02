@@ -689,7 +689,7 @@ a {
   border: none;
 }
 .brief-intro .nav-content .pages .pages-content :last-child button:hover {
-  background-color: var(--btn-hover);
+  color: var(--btn-hover);
 }
 .brief-intro .title {
   display: flex;
@@ -906,5 +906,75 @@ a {
   .devo-certificats .certificats-content .mySwiper .swiper-button-next,
   .devo-certificats .certificats-content .mySwiper .swiper-button-prev {
     top: 355px;
+  }
+}
+.devo-managers {
+  margin-bottom: 90px;
+}
+.devo-managers .manager-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.devo-managers .manager-card img {
+  margin-bottom: 30px;
+}
+.devo-managers .manager-card h6 {
+  font-weight: 700;
+}
+.devo-managers .manager-card span {
+  color: var(--text-secondary-color);
+}
+
+.mytimeline .block {
+  z-index: 1;
+  position: relative;
+}
+.mytimeline .block:before {
+  content: "";
+  position: absolute;
+  height: calc(100% - 40px);
+  right: 29px;
+  border: 1px dashed var(--text-secondary-color);
+  margin-top: 70px;
+}
+.mytimeline .block .title {
+  font-weight: 700;
+  color: var(--text-secondary-color);
+  font-size: 30px;
+}
+.mytimeline .block .each-event {
+  -webkit-padding-start: 80px;
+          padding-inline-start: 80px;
+  margin: 150px 0;
+  position: relative;
+}
+.mytimeline .block .each-event:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--text-secondary-color);
+}
+.mytimeline .block .each-event .event-description {
+  margin-bottom: 30px;
+  line-height: 35px;
+}
+.mytimeline .block .each-event div img {
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .mytimeline .block .each-event {
+    -webkit-padding-start: 55px;
+            padding-inline-start: 55px;
+    margin: 120px 0;
+  }
+  .mytimeline .block .each-event div {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
