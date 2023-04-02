@@ -30,10 +30,11 @@ a {
 .devo-intro {
   margin-bottom: 90px;
   width: 100%;
-  background-image: url(./assets/bg.png);
+  background-image: url(./assets/Rectangle\ 5.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.681);
+  min-height: 100vh;
   .nav-content {
     display: flex;
     justify-content: space-between;
@@ -121,14 +122,15 @@ a {
     .pages {
       .pages-content {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
         .vl {
           border-left: 4px solid var(--text-secondary-color);
           height: 30px;
           border-radius: 5px;
-          margin-inline-start: 10px;
         }
         li {
-          margin-inline-start: 25px;
           .dropdown-menu {
             li {
               margin: 0;
@@ -152,13 +154,18 @@ a {
           background-color: transparent;
           border: none;
         }
+        button:hover {
+          color: var(--btn-hover);
+        }
       }
     }
   }
   .title {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 120px 0px;
+    justify-content: space-between;
+    padding: 160px 0px;
     color: var(--primary-color);
     padding-inline-end: 750px;
     span {
@@ -202,7 +209,7 @@ a {
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .devo-intro {
     .nav-content {
       align-items: stretch;
@@ -241,7 +248,7 @@ a {
 }
 @media (max-width: 1100px) {
   .devo-intro {
-    height: 80vh;
+    min-height: 80vh;
     .title {
       padding: 60px 0px;
     }
@@ -258,6 +265,8 @@ a {
     align-items: center;
     .about-text {
       padding-inline-start: 100px;
+      line-height: 35px;
+
       span {
         background-color: var(--primary-bg-btn);
         color: var(--text-secondary-color);
@@ -267,6 +276,7 @@ a {
       }
       h3 {
         margin: 30px 0px;
+        font-weight: 700;
       }
       button {
         background-color: var(--text-secondary-color);
@@ -382,14 +392,21 @@ a {
   .products-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    :nth-child(even) {
+      img {
+        height: 350px;
+      }
+    }
+    :nth-child(odd) {
+      img {
+        height: 300px;
+      }
+    }
     .product-card {
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
       width: 280px;
       img {
         width: 100%;
-        height: 345px;
       }
       div {
         display: flex;
@@ -415,8 +432,9 @@ a {
       }
     }
     .product-card:hover {
-      transform: scale(0.9);
-      transition: all 0.7s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      transition: all 0.4s ease-in-out;
     }
   }
 }
@@ -458,6 +476,19 @@ a {
       img {
         width: 100%;
       }
+      .grid-item {
+        width: 220px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        padding: 10px;
+        filter: grayscale(100%);
+        transition: all 0.3s ease-in-out;
+      }
+      .grid-item:hover {
+        filter: grayscale(0);
+      }
     }
   }
 }
@@ -490,11 +521,20 @@ a {
     }
   }
   .blog-content {
+    div {
+      :nth-child(even) {
+        .blog-card {
+          img {
+            height: 400px;
+          }
+        }
+      }
+    }
     .blog-card {
+      height: 100%;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
       img {
         width: 100%;
-        height: 400px;
       }
       div {
         display: flex;
@@ -520,8 +560,9 @@ a {
       }
     }
     .blog-card:hover {
-      transform: scale(0.9);
-      transition: all 0.7s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      transition: all 0.4s ease-in-out;
     }
   }
 }
@@ -585,25 +626,11 @@ a {
         margin-bottom: 30px;
       }
     }
-
-    .social-profile {
-      ul {
-        display: flex;
-        li {
-          margin-inline-end: 20px;
-          i {
-            color: var(--primary-color);
-          }
-          i:hover {
-            color: var(--hover-color);
-          }
-        }
-      }
-    }
   }
   .copyright {
     background-color: var(--bottom-bar-color);
     margin-top: 70px;
+    margin-bottom: 0;
     padding: 30px 0px;
     color: var(--text-secondary-color);
     font-size: 15px;
@@ -708,14 +735,16 @@ a {
     .pages {
       .pages-content {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+
         .vl {
           border-left: 4px solid var(--text-secondary-color);
           height: 30px;
           border-radius: 5px;
-          margin-inline-start: 10px;
         }
         li {
-          margin-inline-start: 25px;
           .dropdown-menu {
             li {
               margin: 0;
@@ -739,6 +768,9 @@ a {
           background-color: transparent;
           border: none;
         }
+        button:hover {
+          background-color: var(--btn-hover);
+        }
       }
     }
   }
@@ -754,7 +786,6 @@ a {
     .mybreadcrumb {
       ol {
         li {
-          padding-inline-start: 15px;
           a {
             color: var(--primary-color);
           }
@@ -846,11 +877,14 @@ a {
     align-items: center;
     .brief-text {
       padding-inline-end: 100px;
+      line-height: 35px;
+
       span {
         background-color: var(--primary-bg-btn);
         color: var(--text-secondary-color);
         padding: 10px 20px;
         font-weight: 600;
+
         border-radius: 50px;
       }
     }
@@ -870,4 +904,141 @@ a {
   }
 }
 //end of brief section
+
+//start of value section
+.devo-value {
+  margin-bottom: 90px;
+  .value-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .value-text {
+      padding-inline-end: 100px;
+      line-height: 35px;
+      h3 {
+        margin-bottom: 60px;
+        font-weight: 700;
+      }
+      span {
+        color: var(--text-secondary-color);
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 50px;
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .devo-value {
+    .value-content {
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 20px;
+      }
+      .value-text {
+        padding: 0;
+      }
+    }
+  }
+}
+//end of value section
+
+.devo-certificats {
+  margin-bottom: 90px;
+  .title {
+    text-align: center;
+    span {
+      background-color: var(--primary-bg-btn);
+      color: var(--text-secondary-color);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 700;
+      margin: 40px 0px;
+    }
+  }
+  .certificats-content {
+    .mySwiper {
+      padding-bottom: 100px;
+
+      .swiper-wrapper {
+        width: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        width: auto;
+        img {
+          margin-bottom: 20px;
+        }
+        h4 {
+          font-weight: 700;
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: 700px;
+        color: var(--primary-color);
+        padding: 25px;
+        border-radius: 50%;
+        background-color: var(--text-secondary-color);
+      }
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .devo-certificats {
+    .certificats-content {
+      .mySwiper {
+        padding-bottom: 100px;
+        .swiper-slide {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 630px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .devo-certificats {
+    .certificats-content {
+      .mySwiper {
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 520px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .devo-certificats {
+    .certificats-content {
+      .mySwiper {
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 355px;
+        }
+      }
+    }
+  }
+}
 //end of brief page
