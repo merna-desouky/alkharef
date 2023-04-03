@@ -8,6 +8,8 @@
   --text-secondary-color: #5d6e65;
   --text-third-color: #b2b2b2;
   --btn-hover: #8b9d93;
+  --search-btn: #f5f5f5;
+  --copyright: #808080;
 }
 //global style
 body {
@@ -124,7 +126,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 500px;
+        width: 560px;
         .vl {
           border-left: 4px solid var(--text-secondary-color);
           height: 30px;
@@ -411,7 +413,6 @@ a {
       div {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-between;
         padding: 20px;
         color: var(--text-primary-color);
@@ -643,9 +644,13 @@ a {
     margin-top: 70px;
     margin-bottom: 0;
     padding: 30px 0px;
-    color: var(--text-secondary-color);
+    color: var(--copyright);
+
     font-size: 15px;
     text-align: center;
+    span {
+      color: var(--text-secondary-color);
+    }
   }
 }
 //End of footer
@@ -939,6 +944,21 @@ a {
       p {
         margin-top: 20px;
       }
+      button {
+        background-color: var(--text-secondary-color);
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        font-size: 15px;
+        color: var(--primary-color);
+        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        transition: all 0.2s ease-in-out;
+      }
+      button:hover {
+        background-color: var(--btn-hover);
+      }
     }
   }
 }
@@ -1076,61 +1096,7 @@ a {
 // end of managers page
 
 // start of timeline page
-// .mytimeline {
-//   .timeline {
-//     position: relative;
-//   }
 
-//   .timeline::after {
-//     content: "";
-//     position: absolute;
-//     border: 4px dashed var(--text-secondary-color);
-//     top: 0;
-//     bottom: 0;
-//     margin-left: -3px;
-//   }
-
-//   .content {
-//     position: relative;
-//     padding: 20px 30px;
-//   }
-
-//   .content::after {
-//     content: "";
-//     position: absolute;
-//     width: 25px;
-//     height: 25px;
-//     right: -17px;
-//     background-color: red;
-//     border: 4px solid #ff9f55;
-//     top: 15px;
-//     border-radius: 50%;
-//     z-index: 1;
-//   }
-
-//   /* Media queries - Responsive timeline on screens less than 600px wide */
-//   @media screen and (max-width: 600px) {
-//     /* Place the timelime to the left */
-//     .timeline::after {
-//       left: 31px;
-//     }
-
-//     /* Full-width containers */
-//     .content {
-//       width: 100%;
-//       padding-left: 70px;
-//       padding-right: 25px;
-//     }
-
-//     /* Make sure that all arrows are pointing leftwards */
-//     .content::before {
-//       left: 60px;
-//       border: medium solid white;
-//       border-width: 10px 10px 10px 0;
-//       border-color: transparent white transparent transparent;
-//     }
-//   }
-// }
 .mytimeline {
   .block {
     z-index: 1;
@@ -1191,3 +1157,129 @@ a {
   }
 }
 // end of timeline page
+
+//start of company page
+.devo-search {
+  margin-bottom: 90px;
+  .search-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+      font-weight: 600;
+      font-size: 22px;
+    }
+    input {
+      border: none;
+      background-color: var(--search-btn);
+      width: 600px;
+      padding: 15px;
+      border-radius: 50px;
+    }
+    input:focus-visible {
+      outline: none;
+    }
+    button {
+      background-color: var(--text-secondary-color);
+      font-weight: 600;
+      text-align: center;
+      border: none;
+      font-size: 15px;
+      color: var(--primary-color);
+      border-radius: 50px;
+      width: 150px;
+      height: 50px;
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      i {
+        margin-inline-end: 10px;
+      }
+    }
+    button:hover {
+      background-color: var(--btn-hover);
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .devo-search {
+    .search-content {
+      flex-direction: column;
+      justify-content: space-between;
+      input {
+        width: 100%;
+        margin: 20px 0px;
+      }
+    }
+  }
+}
+.devo-companies {
+  margin-bottom: 90px;
+  .companies-content {
+    .companies-text {
+      line-height: 35px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      h3 {
+        margin-bottom: 40px;
+        font-weight: 700;
+      }
+      button {
+        background-color: var(--text-secondary-color);
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        font-size: 15px;
+        color: var(--primary-color);
+        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+
+        i {
+          margin-inline-end: 10px;
+        }
+      }
+      button:hover {
+        background-color: var(--btn-hover);
+      }
+    }
+    .companies-img {
+      text-align: end;
+      img {
+        height: 550px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .devo-companies {
+    .companies-content {
+      .companies-img {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .devo-companies {
+    .companies-content {
+      .companies-img {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+//end of company page
