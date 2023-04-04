@@ -152,7 +152,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 160px 0px;
+  padding: 260px 0px;
   color: var(--primary-color);
   -webkit-padding-end: 750px;
           padding-inline-end: 750px;
@@ -674,7 +674,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  width: 560px;
 }
 .brief-intro .nav-content .pages .pages-content .vl {
   border-left: 4px solid var(--text-secondary-color);
@@ -1115,4 +1115,29 @@ a {
   .devo-companies .companies-content .companies-img img {
     height: auto;
   }
+}
+.pages-count {
+  margin-bottom: 90px;
+}
+.pages-count .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages-count .pagination div {
+  color: var(--text-secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+.pages-count .pagination :nth-child(2) a {
+  color: var(--bottom-bar-color);
+}
+.pages-count .pagination :nth-child(2) a.active {
+  color: var(--text-secondary-color);
+  background-color: var(--text-secondary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  padding: 12px 17px;
+  text-align: center;
+  margin: 15px;
 }/*# sourceMappingURL=style.css.map */
