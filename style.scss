@@ -1282,9 +1282,6 @@ a {
     }
   }
 }
-//end of company page
-
-//start of company info
 .pages-count {
   margin-bottom: 90px;
   .pagination {
@@ -1309,6 +1306,23 @@ a {
         text-align: center;
         margin: 15px;
       }
+    }
+  }
+}
+//end of company page
+
+//start of company info
+.devo-article {
+  .article-content {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      float: left;
+      width: 45%;
+    }
+    .right {
+      float: right;
+      width: 45%;
     }
   }
 }

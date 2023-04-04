@@ -1140,4 +1140,17 @@ a {
   padding: 12px 17px;
   text-align: center;
   margin: 15px;
+}
+
+.devo-article .article-content {
+  display: flex;
+  justify-content: space-between;
+}
+.devo-article .article-content .left {
+  float: left;
+  width: 45%;
+}
+.devo-article .article-content .right {
+  float: right;
+  width: 45%;
 }/*# sourceMappingURL=style.css.map */
