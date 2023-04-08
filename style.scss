@@ -10,6 +10,7 @@
   --btn-hover: #8b9d93;
   --search-btn: #f5f5f5;
   --copyright: #808080;
+  --bg-color: #f4f5f4;
 }
 //global style
 body {
@@ -838,7 +839,7 @@ a {
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   .brief-intro {
     .nav-content {
       align-items: stretch;
@@ -997,7 +998,7 @@ a {
   .certificats-content {
     .mySwiper {
       padding-bottom: 100px;
-
+      position: relative;
       .swiper-wrapper {
         width: 100%;
       }
@@ -1013,6 +1014,7 @@ a {
       }
       .swiper-button-next,
       .swiper-button-prev {
+        position: absolute;
         top: 700px;
         color: var(--primary-color);
         padding: 25px;
@@ -1313,17 +1315,258 @@ a {
 
 //start of company info
 .devo-article {
+  margin-bottom: 90px;
   .article-content {
+    .article-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-inline-end: 100px;
+      h3 {
+        margin-bottom: 30px;
+      }
+      span {
+        margin-bottom: 40px;
+        i {
+          color: var(--text-secondary-color);
+        }
+      }
+    }
+  }
+}
+
+.devo-download {
+  margin-bottom: 90px;
+  .download-content {
+    background-image: url(./assets/Rectangle\ 41.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgb(150 150 150 / 80%);
     display: flex;
     justify-content: space-between;
-    .left {
-      float: left;
-      width: 45%;
+    align-items: center;
+    padding: 40px 50px;
+    h3 {
+      color: var(--primary-color);
     }
-    .right {
-      float: right;
-      width: 45%;
+    div {
+      background-color: var(--primary-color);
+      color: var(--text-secondary-color);
+      border-radius: 50px;
+      padding: 20px 60px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      i {
+        margin-inline-end: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .devo-download {
+    .download-content {
+      flex-direction: column;
+      text-align: center;
+      h3 {
+        margin-bottom: 20px;
+      }
+      div {
+        padding: 15px 20px;
+      }
+    }
+  }
+}
+.devo-product-swiper {
+  margin-bottom: 90px;
+  .title {
+    text-align: center;
+    span {
+      background-color: var(--primary-bg-btn);
+      color: var(--text-secondary-color);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 700;
+      margin: 40px 0px;
+    }
+  }
+  .product-swiper-content {
+    .mySwiper {
+      position: relative;
+      padding-bottom: 110px;
+      img {
+        width: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 490px;
+        color: var(--primary-color);
+        padding: 25px;
+        border-radius: 50%;
+        background-color: var(--text-secondary-color);
+      }
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.devo-map {
+  margin-bottom: 90px;
+  .title {
+    text-align: center;
+    span {
+      background-color: var(--primary-bg-btn);
+      color: var(--text-secondary-color);
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 700;
+      margin: 40px 0px;
+    }
+  }
+
+  .map-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .map-img {
+      flex: 1;
+    }
+    .map-text {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding-inline-start: 100px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        :nth-child(1) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .devo-map {
+    .map-content {
+      flex-direction: column;
+      .map-img {
+        margin-bottom: 30px;
+      }
+      .map-text {
+        padding: 0;
+      }
     }
   }
 }
 //end of company info
+
+//start of products page
+.devo-intro-products {
+  margin-bottom: 90px;
+  .products-content {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    .products-text {
+      flex: 1;
+      padding-inline-end: 100px;
+      line-height: 40px;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        margin-bottom: 30px;
+      }
+    }
+    .mySwiper {
+      flex: 1;
+      padding: 28px;
+      width: 100%;
+      .swiper-slide {
+        text-align: center;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--primary-color);
+        padding: 22px;
+        border-radius: 50%;
+        background-color: var(--text-secondary-color);
+      }
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .devo-intro-products {
+    .products-content {
+      flex-direction: column;
+      padding: 20px;
+      .products-text {
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      .mySwiper {
+        padding: 0;
+      }
+    }
+  }
+}
+//end of products page
+
+//start of notes page
+.devo-notes {
+  margin-bottom: 90px;
+  .note-card {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    img {
+      width: 100%;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      color: var(--text-primary-color);
+      h5 {
+        font-weight: 600;
+      }
+      span {
+        margin-bottom: 30px;
+      }
+      a {
+        color: var(--text-secondary-color);
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        i {
+          margin-inline-start: 5px;
+        }
+      }
+    }
+  }
+  .note-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.4s ease-in-out;
+  }
+}
+//end of notes page
