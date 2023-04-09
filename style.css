@@ -46,76 +46,10 @@ a {
   justify-content: space-between;
   margin-top: 20px;
 }
-.devo-intro .nav-content .mobile-menu {
-  display: none;
-}
-.devo-intro .nav-content .mobile-menu .myicon1 {
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  z-index: 111;
-}
-.devo-intro .nav-content .mobile-menu .myicon1 .icon1 {
-  font-size: 20px;
-  font-weight: bold;
-}
-.devo-intro .nav-content .mobile-menu .menu {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.devo-intro .nav-content .mobile-menu .menu .myicon2 {
-  position: fixed;
-  top: 30px;
-  left: 25px;
-  z-index: 111;
-}
-.devo-intro .nav-content .mobile-menu .menu .myicon2 .icon2 {
-  opacity: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-.devo-intro .nav-content .mobile-menu .menu .overlay {
-  background-color: var(--btn-hover);
-  transform: scale(0);
-  top: -31px;
-  left: 21px;
-  width: 0px;
-  height: 0px;
-  position: fixed;
-  z-index: 11;
-  border-radius: 50%;
-  transition: all 1s ease-in-out;
-}
-.devo-intro .nav-content .mobile-menu .menu .my-list {
-  transform: translateX(1240px);
-  text-align: center;
-  position: fixed;
-  z-index: 11;
-  line-height: 40px;
-}
-.devo-intro .nav-content .mobile-menu .menu .my-list li a {
+.devo-intro .nav-content .mob-menu {
   color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 600;
-}
-.devo-intro .nav-content .mobile-menu .menu .my-list li a:hover {
-  color: var(--hover-color);
-}
-.devo-intro .nav-content .mobile-menu .menu.active .overlay {
-  transform: scale(20);
-  width: 100px;
-  height: 100px;
-}
-.devo-intro .nav-content .mobile-menu .menu.active .my-list {
-  transform: translateX(0);
-  transition: all 1s ease-in-out;
+  font-size: 23px;
+  display: none;
 }
 .devo-intro .nav-content .pages .pages-content {
   display: flex;
@@ -207,7 +141,7 @@ a {
   .devo-intro .nav-content .pages {
     display: none;
   }
-  .devo-intro .nav-content .mobile-menu {
+  .devo-intro .nav-content .mob-menu {
     display: block;
   }
   .title h1 {
@@ -218,9 +152,6 @@ a {
   .devo-intro .nav-content .logo img {
     height: 55px;
     width: 100%;
-  }
-  .devo-intro .nav-content .mobile-menu .menu .overlay {
-    left: -15px;
   }
 }
 @media (max-width: 1100px) {
@@ -601,76 +532,10 @@ a {
   justify-content: space-between;
   margin-top: 20px;
 }
-.brief-intro .nav-content .mobile-menu {
-  display: none;
-}
-.brief-intro .nav-content .mobile-menu .myicon1 {
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  z-index: 111;
-}
-.brief-intro .nav-content .mobile-menu .myicon1 .icon1 {
-  font-size: 20px;
-  font-weight: bold;
-}
-.brief-intro .nav-content .mobile-menu .menu {
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.brief-intro .nav-content .mobile-menu .menu .myicon2 {
-  position: fixed;
-  top: 30px;
-  left: 25px;
-  z-index: 111;
-}
-.brief-intro .nav-content .mobile-menu .menu .myicon2 .icon2 {
-  opacity: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-.brief-intro .nav-content .mobile-menu .menu .overlay {
-  background-color: var(--btn-hover);
-  transform: scale(0);
-  top: -31px;
-  left: 21px;
-  width: 0px;
-  height: 0px;
-  position: fixed;
-  z-index: 11;
-  border-radius: 50%;
-  transition: all 1s ease-in-out;
-}
-.brief-intro .nav-content .mobile-menu .menu .my-list {
-  transform: translateX(1240px);
-  text-align: center;
-  position: fixed;
-  z-index: 11;
-  line-height: 40px;
-}
-.brief-intro .nav-content .mobile-menu .menu .my-list li a {
+.brief-intro .nav-content .mob-menu {
   color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 600;
-}
-.brief-intro .nav-content .mobile-menu .menu .my-list li a:hover {
-  color: var(--hover-color);
-}
-.brief-intro .nav-content .mobile-menu .menu.active .overlay {
-  transform: scale(20);
-  width: 100px;
-  height: 100px;
-}
-.brief-intro .nav-content .mobile-menu .menu.active .my-list {
-  transform: translateX(0);
-  transition: all 1s ease-in-out;
+  font-size: 23px;
+  display: none;
 }
 .brief-intro .nav-content .pages .pages-content {
   display: flex;
@@ -755,7 +620,7 @@ a {
   .brief-intro .nav-content .pages {
     display: none;
   }
-  .brief-intro .nav-content .mobile-menu {
+  .brief-intro .nav-content .mob-menu {
     display: block;
   }
   .title h1 {
@@ -766,9 +631,6 @@ a {
   .brief-intro .nav-content .logo img {
     height: 55px;
     width: 100%;
-  }
-  .brief-intro .nav-content .mobile-menu .menu .overlay {
-    left: -15px;
   }
 }
 @media (max-width: 1000px) {
@@ -1483,5 +1345,92 @@ a {
   }
   .devo-brochure .brochure-content .title {
     margin-bottom: 30px;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary-btn-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav .topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  margin-bottom: 40px;
+}
+.sidenav .topbar .closebtn {
+  font-size: 25px;
+  padding: 15px;
+  color: var(--primary-color);
+}
+.sidenav .links {
+  padding: 0px 50px;
+  margin-bottom: 80px;
+  max-height: 270px;
+  overflow-y: auto;
+}
+.sidenav .links a .btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  margin-bottom: 25px;
+}
+.sidenav .links a .btn-toggle i {
+  font-size: 19px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.sidenav .links a .btn-toggle:not(.collapsed) i {
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
+}
+.sidenav .links .dropdown-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  margin-bottom: 25px;
+}
+.sidenav .bottombar {
+  padding: 0px 50px;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav .bottombar div i {
+  font-size: 25px;
+  padding: 10px;
+}
+.sidenav .bottombar p {
+  font-size: 10px;
+}
+
+@media (max-width: 570px) {
+  .sidenav .topbar {
+    padding: 10px 17px;
+  }
+  .sidenav .links a {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */

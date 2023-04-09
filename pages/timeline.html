@@ -116,51 +116,144 @@
                     <div class="vl"></div>
 
                     <li>
-                      <button><i class="fa-solid fa-globe"></i> EN</button>
+                      <button id="btn_en">
+                        <i class="fa-solid fa-globe"></i> EN
+                      </button>
+
+                      <button id="btn_ar">
+                        <i class="fa-solid fa-globe"></i> AR
+                      </button>
                     </li>
                   </ul>
                 </div>
-                <div class="mobile-menu">
-                  <a
-                    href="javascript:void(0);"
-                    class="myicon1"
-                    onclick="myToggle()"
-                  >
-                    <i
-                      onclick="myFunction()"
-                      id="icon1"
-                      class="icon1 fa-solid fa-bars"
-                      style="color: #ffffff"
-                    ></i>
-                  </a>
-                  <div id="my-menu" class="menu">
+                <span onclick="openNav()" class="mob-menu"
+                  ><i class="fa-solid fa-bars"></i
+                ></span>
+                <div id="mySidenav" class="sidenav">
+                  <div class="topbar">
+                    <a href="./index.html" class="logo"
+                      ><img src="./../assets/logo_inner_page 1.svg"
+                    /></a>
                     <a
-                      href="javascript:void(0);"
-                      class="myicon2"
-                      onclick="myToggle()"
-                    >
-                      <i
-                        onclick="myFunction()"
-                        id="icon2"
-                        class="icon2 fa-solid fa-xmark"
-                        style="color: #ffffff"
-                      ></i>
-                    </a>
-                    <div class="overlay"></div>
-                    <ul class="my-list">
-                      <li>
-                        <a aria-current="page" href="./index.html">Home</a>
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></a>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled ps-0">
+                      <li class="mb-1">
+                        <a href="./../index.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse"
+                            aria-expanded="false"
+                          >
+                            الرئيسية
+                          </button></a
+                        >
                       </li>
-                      <li>
-                        <a href="./pages/aboutUs.html">About Us</a>
+                      <li class="mb-1">
+                        <a>
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse"
+                            aria-expanded="true"
+                          >
+                            من نحن
+                            <i class="fa-solid fa-arrow-left"></i></button
+                        ></a>
+                        <div class="collapse" id="dashboard-collapse" style="">
+                          <ul
+                            class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="./brief.html"
+                                >نبذة عننا</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./managers.html"
+                                >كلمة رئيس مجلس الإدارة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./timeline.html"
+                                >مسيرتنا</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </li>
-                      <li>
-                        <a href="./pages/Services.html"> Our Services</a>
+                      <li class="mb-1">
+                        <a href="./products.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse"
+                            aria-expanded="false"
+                          >
+                            منتجاتنا
+                          </button></a
+                        >
                       </li>
-                      <li>
-                        <a href="./pages/ContactUs.html"> Contact Us</a>
+                      <li class="mb-1">
+                        <a href="./company.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse"
+                            aria-expanded="false"
+                          >
+                            شركاتنا
+                          </button></a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a>
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse"
+                            aria-expanded="false"
+                          >
+                            المركز الاعلامي
+                            <i class="fa-solid fa-arrow-left"></i></button
+                        ></a>
+                        <div class="collapse" id="account-collapse">
+                          <ul
+                            class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="./notes.html"
+                                >المدونة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./magazine.html"
+                                >المجلة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./brochure.html"
+                                >البورشرات</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
+                  </div>
+                  <div class="bottombar">
+                    <div>
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                    <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
                   </div>
                 </div>
               </div>
@@ -350,32 +443,43 @@
     ></script>
     <!-- js for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script>
-      function myToggle() {
-        var list = document.getElementById("my-menu");
-        if (list.classList.contains("active")) {
-          list.classList.remove("active");
-          document.body.style.overflow = "scroll";
-        } else {
-          list.classList.add("active");
-          document.body.style.overflow = "hidden";
-        }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.body.style.overflow = "hidden";
       }
-    </script>
-    <script>
-      function myFunction() {
-        var myicon1 = document.getElementById("icon1");
-        if (myicon1.style.opacity === "0") {
-          myicon1.style.opacity = "1";
-        } else {
-          myicon1.style.opacity = "0";
-        }
-        var myicon2 = document.getElementById("icon2");
-        if (myicon2.style.opacity === "1") {
-          myicon2.style.opacity = "0";
-        } else {
-          myicon2.style.opacity = "1";
-        }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.overflow = "scroll";
+      }
+      let btn_ar = document.getElementById("btn_ar");
+      let btn_en = document.getElementById("btn_en");
+
+      btn_ar.addEventListener("click", () => {
+        localStorage.setItem("dir", "rtl");
+        document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
+        btn_ar.style.display = "none";
+        btn_en.style.display = "block";
+      });
+
+      btn_en.addEventListener("click", () => {
+        localStorage.setItem("dir", "ltr");
+        document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
+        btn_ar.style.display = "block";
+        btn_en.style.display = "none";
+      });
+
+      if (localStorage.getItem("dir") === "rtl") {
+        document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
+        btn_ar.style.display = "none";
+        btn_en.style.display = "block";
+      } else {
+        document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
+        btn_ar.style.display = "block";
+        btn_en.style.display = "none";
       }
     </script>
   </body>

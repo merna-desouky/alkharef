@@ -134,47 +134,143 @@
                     </li>
                   </ul>
                 </div>
-                <div class="mobile-menu">
-                  <a
-                    href="javascript:void(0);"
-                    class="myicon1"
-                    onclick="myToggle()"
-                  >
-                    <i
-                      onclick="myFunction()"
-                      id="icon1"
-                      class="icon1 fa-solid fa-bars"
-                      style="color: #ffffff"
-                    ></i>
-                  </a>
-                  <div id="my-menu" class="menu">
+                <span onclick="openNav()" class="mob-menu"
+                  ><i class="fa-solid fa-bars"></i
+                ></span>
+                <div id="mySidenav" class="sidenav">
+                  <div class="topbar">
+                    <a href="./index.html" class="logo"
+                      ><img src="./assets/logo_inner_page 1.svg"
+                    /></a>
                     <a
-                      href="javascript:void(0);"
-                      class="myicon2"
-                      onclick="myToggle()"
-                    >
-                      <i
-                        onclick="myFunction()"
-                        id="icon2"
-                        class="icon2 fa-solid fa-xmark"
-                        style="color: #ffffff"
-                      ></i>
-                    </a>
-                    <div class="overlay"></div>
-                    <ul class="my-list">
-                      <li>
-                        <a aria-current="page" href="./index.html">Home</a>
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      ><i class="fa-solid fa-xmark"></i
+                    ></a>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled ps-0">
+                      <li class="mb-1">
+                        <a href="./index.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse"
+                            aria-expanded="false"
+                            href="./index.html"
+                          >
+                            الرئيسية
+                          </button></a
+                        >
                       </li>
-                      <li>
-                        <a href="./pages/aboutUs.html">About Us</a>
+                      <li class="mb-1">
+                        <a>
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse"
+                            aria-expanded="true"
+                          >
+                            من نحن
+                            <i class="fa-solid fa-arrow-left"></i></button
+                        ></a>
+                        <div class="collapse" id="dashboard-collapse" style="">
+                          <ul
+                            class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="./pages/brief.html"
+                                >نبذة عننا</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="./pages/managers.html"
+                                >كلمة رئيس مجلس الإدارة</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="./pages/timeline.html"
+                                >مسيرتنا</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </li>
-                      <li>
-                        <a href="./pages/Services.html"> Our Services</a>
+                      <li class="mb-1">
+                        <a href="./pages/products.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse"
+                            aria-expanded="false"
+                          >
+                            منتجاتنا
+                          </button></a
+                        >
                       </li>
-                      <li>
-                        <a href="./pages/ContactUs.html"> Contact Us</a>
+                      <li class="mb-1">
+                        <a href="./pages/company.html">
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse"
+                            aria-expanded="false"
+                          >
+                            شركاتنا
+                          </button></a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a>
+                          <button
+                            class="btn btn-toggle align-items-center rounded collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse"
+                            aria-expanded="false"
+                          >
+                            المركز الاعلامي
+                            <i class="fa-solid fa-arrow-left"></i></button
+                        ></a>
+                        <div class="collapse" id="account-collapse">
+                          <ul
+                            class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="./pages/notes.html"
+                                >المدونة</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="./pages/magazine.html"
+                                >المجلة</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="./pages/brochure.html"
+                                >البورشرات</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
+                  </div>
+                  <div class="bottombar">
+                    <div>
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                      <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                    <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
                   </div>
                 </div>
               </div>
@@ -519,21 +615,16 @@
       }
     </script>
     <script>
-      function myFunction() {
-        var myicon1 = document.getElementById("icon1");
-        if (myicon1.style.opacity === "0") {
-          myicon1.style.opacity = "1";
-        } else {
-          myicon1.style.opacity = "0";
-        }
-        var myicon2 = document.getElementById("icon2");
-        if (myicon2.style.opacity === "1") {
-          myicon2.style.opacity = "0";
-        } else {
-          myicon2.style.opacity = "1";
-        }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.body.style.overflow = "hidden";
       }
 
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.overflow = "scroll";
+      }
       let btn_ar = document.getElementById("btn_ar");
       let btn_en = document.getElementById("btn_en");
 
