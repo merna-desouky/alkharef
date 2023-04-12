@@ -533,24 +533,22 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        // breakpoints: {
-        //   // when window width is >= 320px
-        //   320: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 10,
-        //   },
-        //   // when window width is >= 480px
-        //   480: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 10,
-        //   },
-        //   // when window width is >= 640px
-        //   640: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 10,
-        //   },
-        // },
+        breakpoints: {
+          320: {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+          },
+          480: {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+          },
+          640: {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+          },
+        },
       });
+
       let btn_ar = document.getElementById("btn_ar");
       let btn_en = document.getElementById("btn_en");
 
@@ -559,7 +557,6 @@
         document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
         btn_ar.style.display = "none";
         btn_en.style.display = "block";
-        swiper.changeLanguageDirection("rtl");
       });
 
       btn_en.addEventListener("click", () => {
@@ -567,17 +564,18 @@
         document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
         btn_ar.style.display = "block";
         btn_en.style.display = "none";
-        swiper.changeLanguageDirection("ltr");
       });
 
       if (localStorage.getItem("dir") === "rtl") {
         document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
         btn_ar.style.display = "none";
         btn_en.style.display = "block";
+        swiper.changeLanguageDirection("rtl");
       } else {
         document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
         btn_ar.style.display = "block";
         btn_en.style.display = "none";
+        swiper.changeLanguageDirection("ltr");
       }
     </script>
   </body>

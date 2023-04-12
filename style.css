@@ -51,6 +51,9 @@ a {
   font-size: 23px;
   display: none;
 }
+.devo-intro .nav-content .pages .sub-menu {
+  display: none;
+}
 .devo-intro .nav-content .pages .pages-content {
   display: flex;
   justify-content: space-between;
@@ -74,6 +77,30 @@ a {
 }
 .devo-intro .nav-content .pages .pages-content li a:hover {
   color: var(--btn-hover);
+}
+.devo-intro .nav-content .pages .pages-content li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 6px 18px 2px rgba(31, 121, 230, 0.15);
+}
+.devo-intro .nav-content .pages .pages-content li:hover .sub-menu span {
+  display: inline-block;
+  background-color: var(--text-secondary-color);
+  width: 10px;
+  height: 20px;
+}
+.devo-intro .nav-content .pages .pages-content li:hover .sub-menu li {
+  margin-bottom: 10px;
+}
+.devo-intro .nav-content .pages .pages-content li:hover .sub-menu li a {
+  color: var(--text-secondary-color);
 }
 .devo-intro .nav-content .pages .pages-content :last-child button {
   color: var(--text-secondary-color);

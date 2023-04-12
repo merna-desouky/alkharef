@@ -49,6 +49,9 @@ a {
       display: none;
     }
     .pages {
+      .sub-menu {
+        display: none;
+      }
       .pages-content {
         display: flex;
         justify-content: space-between;
@@ -74,6 +77,32 @@ a {
           }
           a:hover {
             color: var(--btn-hover);
+          }
+        }
+        li:hover {
+          .sub-menu {
+            display: block;
+            position: absolute;
+            background-color: white;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 1px 6px 18px 2px rgb(31 121 230 / 15%);
+            span {
+              display: inline-block;
+              background-color: var(--text-secondary-color);
+              width: 10px;
+              height: 20px;
+            }
+            li {
+              margin-bottom: 10px;
+              a {
+                color: var(--text-secondary-color);
+              }
+            }
           }
         }
       }
