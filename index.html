@@ -143,10 +143,22 @@
                     </li>
                   </ul>
                 </div>
-                <span onclick="openNav()" class="mob-menu"
-                  ><i class="fa-solid fa-bars"></i
-                ></span>
-                <div id="mySidenav" class="sidenav">
+                <input type="checkbox" class="check" id="checked" />
+                <label class="menu-btn" for="checked">
+                  <span class="bar top"></span>
+                  <span class="bar middle"></span>
+                  <span class="bar bottom"></span>
+                </label>
+                <nav class="drawer-menu">
+                  <ul>
+                    <li><a href="#">Side Menu Name</a></li>
+                    <li><a href="#">Side Menu Name</a></li>
+                    <li><a href="#">Side Menu Name</a></li>
+                    <li><a href="#">Side Menu Name</a></li>
+                    <li><a href="#">Side Menu Name</a></li>
+                  </ul>
+                </nav>
+                <!-- <div id="mySidenav" class="sidenav">
                   <div class="topbar">
                     <a href="./index.html" class="logo"
                       ><img src="./assets/logo_inner_page 1.svg"
@@ -281,7 +293,7 @@
                     </div>
                     <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </nav>
           </div>
@@ -377,17 +389,45 @@
             <div class="col-lg-7 col-sm-12 col-xs-12">
               <div class="myimgs">
                 <div class="row gy-4">
-                  <div class="col-6">
-                    <img src="./assets/1.png" class="img-fluid" />
+                  <div class="col-lg-6 col-sm-12">
+                    <a href="#">
+                      <div class="img-content">
+                        <img src="./assets/Rectangle 7.png" class="img-fluid" />
+                        <img
+                          src="./assets/Group 26.jpg"
+                          class="img-fluid"
+                        /></div
+                    ></a>
                   </div>
-                  <div class="col-6">
-                    <img src="./assets/2.png" class="img-fluid" />
+                  <div class="col-lg-6 col-sm-12">
+                    <a href="#">
+                      <div class="img-content">
+                        <img src="./assets/Rectangle 7.png" class="img-fluid" />
+                        <img
+                          src="./assets/Group 26.jpg"
+                          class="img-fluid"
+                        /></div
+                    ></a>
                   </div>
-                  <div class="col-6">
-                    <img src="./assets/3.png" class="img-fluid" />
+                  <div class="col-lg-6 col-sm-12">
+                    <a href="#">
+                      <div class="img-content">
+                        <img src="./assets/Rectangle 7.png" class="img-fluid" />
+                        <img
+                          src="./assets/Group 26.jpg"
+                          class="img-fluid"
+                        /></div
+                    ></a>
                   </div>
-                  <div class="col-6">
-                    <img src="./assets/2.png" class="img-fluid" />
+                  <div class="col-lg-6 col-sm-12">
+                    <a href="#">
+                      <div class="img-content">
+                        <img src="./assets/Rectangle 7.png" class="img-fluid" />
+                        <img
+                          src="./assets/Group 26.jpg"
+                          class="img-fluid"
+                        /></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -408,38 +448,50 @@
               <h3>شركاؤنا يساهموا في نجاح منظمتنا</h3>
             </div>
             <div class="products-content">
-              <div class="product-card">
-                <img src="./assets/h2-img-2.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>تقنية المياه و الطاقة</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
-              <div class="product-card">
-                <img src="./assets/h2-img-3.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>البحرية ومعدات الغوص</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
-              <div class="product-card">
-                <img src="./assets/h2-img-4.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>الحلول الزراعية</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
-              <div class="product-card">
-                <img src="./assets/h2-img-5.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>زيوت التشحيم</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
+              <a href="#">
+                <div class="product-card">
+                  <img src="./assets/h2-img-2.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>تقنية المياه و الطاقة</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
+              <a href="#">
+                <div class="product-card">
+                  <img src="./assets/h2-img-3.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>البحرية ومعدات الغوص</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
+              <a href="#">
+                <div class="product-card">
+                  <img src="./assets/h2-img-4.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>الحلول الزراعية</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
+              <a href="#">
+                <div class="product-card">
+                  <img src="./assets/h2-img-5.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>زيوت التشحيم</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
             </div>
           </div>
         </div>
@@ -507,34 +559,43 @@
         <div class="blog-content">
           <div class="row gx-lg-5 gy-5">
             <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="blog-card">
-                <img src="./assets/h2-blog-img-1.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>تقنية المياه و الطاقة</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
+              <a href="#">
+                <div class="blog-card">
+                  <img src="./assets/h2-blog-img-1.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>تقنية المياه و الطاقة</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
             </div>
             <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="blog-card">
-                <img src="./assets/h2-blog-img-2.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>البحرية ومعدات الغوص</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
+              <a href="#">
+                <div class="blog-card">
+                  <img src="./assets/h2-blog-img-2.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>البحرية ومعدات الغوص</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
             </div>
             <div class="col-lg-4 col-sm-12 col-xs-12">
-              <div class="blog-card">
-                <img src="./assets/h2-blog-img-3.jpg.png" class="img-fluid" />
-                <div>
-                  <h5>الحلول الزراعية</h5>
-                  <span>هذا النص يمكن استبداله بنص آخر بديل</span>
-                  <a href="#">عرض الكل<i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-              </div>
+              <a href="#">
+                <div class="blog-card">
+                  <img src="./assets/h2-blog-img-3.jpg.png" class="img-fluid" />
+                  <div>
+                    <h5>الحلول الزراعية</h5>
+                    <span>هذا النص يمكن استبداله بنص آخر بديل</span>
+                    <span href="#"
+                      >عرض الكل<i class="fa-solid fa-arrow-left"></i
+                    ></span>
+                  </div></div
+              ></a>
             </div>
           </div>
         </div>
@@ -597,7 +658,7 @@
       </div>
       <div>
         <p class="copyright">
-          جميع الحقوق محفوظة ل<span> مجموعة الفنار</span> @2023
+          جميع الحقوق محفوظة ل<a href="#"> مجموعة الفنار</a> @2023
         </p>
       </div>
     </div>
