@@ -37,9 +37,9 @@
     <!-- Start of intro -->
     <div class="devo-intro">
       <div class="container">
-        <div class="row">
+        <div class="row" id="devo-intro">
           <div class="col-12">
-            <nav>
+            <nav id="my-nav">
               <div class="nav-content">
                 <a href="./index.html" class="logo"
                   ><img src="./assets/logo_inner_page 1.svg"
@@ -49,32 +49,24 @@
                     <li>
                       <a aria-current="page" href="#">الرئيسية</a>
                     </li>
-                    <li>
-                      <div class="dropdown">
-                        <a
-                          class="dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          من نحن
-                        </a>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-109"
+                    >
+                      <div>
+                        <a href="#"> من نحن </a>
                         <ul class="sub-menu" id="sub-menu">
                           <li
                             id="menu-item-113"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"
                           >
-                            <a href="https://devolum.com/services/branding/"
-                              >نبذة عننا</a
-                            >
+                            <a href="./pages/brief.html">نبذة عننا</a>
                           </li>
 
                           <li
                             id="menu-item-115"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"
                           >
-                            <a
-                              href="https://devolum.com/services/web-development/"
+                            <a href="./pages/managers.html"
                               >كلمة رئيس مجلس الإدارة
                             </a>
                           </li>
@@ -82,11 +74,7 @@
                             id="menu-item-115"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"
                           >
-                            <a
-                              href="https://devolum.com/services/web-development/"
-                            >
-                              مسيرتنا</a
-                            >
+                            <a href="./pages/timeline.html"> مسيرتنا</a>
                           </li>
                         </ul>
                       </div>
@@ -97,35 +85,30 @@
                     <li>
                       <a href="./pages/company.html"> شركاتنا</a>
                     </li>
-                    <li>
-                      <div class="dropdown">
-                        <a
-                          class="dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          المركز الاعلامي
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./pages/notes.html"
-                              >المدونة</a
-                            >
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-109"
+                    >
+                      <div>
+                        <a href="#"> المركز الاعلامي </a>
+                        <ul class="sub-menu" id="sub-menu">
+                          <li
+                            id="menu-item-113"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"
+                          >
+                            <a href="./pages/notes.html"> المدونة</a>
                           </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="./pages/magazine.html"
-                              >المجلة</a
-                            >
+
+                          <li
+                            id="menu-item-115"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"
+                          >
+                            <a href="./pages/magazine.html">المجلة </a>
                           </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="./pages/brochure.html"
-                              >البورشرات</a
-                            >
+                          <li
+                            id="menu-item-115"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"
+                          >
+                            <a href="./pages/brochure.html"> البورشرات</a>
                           </li>
                         </ul>
                       </div>
@@ -136,29 +119,17 @@
                       <button id="btn_en">
                         <i class="fa-solid fa-globe"></i> EN
                       </button>
-
-                      <button id="btn_ar">
-                        <i class="fa-solid fa-globe"></i> AR
-                      </button>
                     </li>
                   </ul>
                 </div>
-                <input type="checkbox" class="check" id="checked" />
-                <label class="menu-btn" for="checked">
-                  <span class="bar top"></span>
-                  <span class="bar middle"></span>
-                  <span class="bar bottom"></span>
-                </label>
-                <nav class="drawer-menu">
-                  <ul>
-                    <li><a href="#">Side Menu Name</a></li>
-                    <li><a href="#">Side Menu Name</a></li>
-                    <li><a href="#">Side Menu Name</a></li>
-                    <li><a href="#">Side Menu Name</a></li>
-                    <li><a href="#">Side Menu Name</a></li>
-                  </ul>
-                </nav>
-                <!-- <div id="mySidenav" class="sidenav">
+                <span onclick="openNav()" class="mob-menu"
+                  ><i class="fa-solid fa-bars"></i
+                ></span>
+                <div
+                  id="mySidenav"
+                  class="sidenav"
+                  style="transform: translateX(100%)"
+                >
                   <div class="topbar">
                     <a href="./index.html" class="logo"
                       ><img src="./assets/logo_inner_page 1.svg"
@@ -293,7 +264,7 @@
                     </div>
                     <p>جميع الحقوق محفوظه لدي الفنار جروب</p>
                   </div>
-                </div> -->
+                </div>
               </div>
             </nav>
           </div>
@@ -672,54 +643,18 @@
     ></script>
     <!-- js for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      function myToggle() {
-        var list = document.getElementById("my-menu");
-        if (list.classList.contains("active")) {
-          list.classList.remove("active");
-          document.body.style.overflow = "scroll";
-        } else {
-          list.classList.add("active");
-          document.body.style.overflow = "hidden";
-        }
-      }
-    </script>
+
     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.transform =
+          "translateX( 0 )";
         document.body.style.overflow = "hidden";
       }
 
-      /* Set the width of the side navigation to 0 */
       function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").style.transform =
+          "translateX(100%)";
         document.body.style.overflow = "scroll";
-      }
-      let btn_ar = document.getElementById("btn_ar");
-      let btn_en = document.getElementById("btn_en");
-
-      btn_ar.addEventListener("click", () => {
-        localStorage.setItem("dir", "rtl");
-        document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
-        btn_ar.style.display = "none";
-        btn_en.style.display = "block";
-      });
-
-      btn_en.addEventListener("click", () => {
-        localStorage.setItem("dir", "ltr");
-        document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
-        btn_ar.style.display = "block";
-        btn_en.style.display = "none";
-      });
-
-      if (localStorage.getItem("dir") === "rtl") {
-        document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
-        btn_ar.style.display = "none";
-        btn_en.style.display = "block";
-      } else {
-        document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
-        btn_ar.style.display = "block";
-        btn_en.style.display = "none";
       }
     </script>
   </body>
