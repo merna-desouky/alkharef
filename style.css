@@ -1603,4 +1603,7 @@ html[dir=ltr] .devo-notes .note-card div :last-child i {
 }
 html[dir=ltr] .devo-notes .note-card:hover div :last-child i {
   transform: translateX(10px) rotate(180deg);
+}
+html[dir=ltr] .sidenav .links a .btn-toggle i {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

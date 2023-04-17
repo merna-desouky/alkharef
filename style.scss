@@ -1842,4 +1842,15 @@ html[dir="ltr"] {
       }
     }
   }
+  .sidenav {
+    .links {
+      a {
+        .btn-toggle {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
 }
