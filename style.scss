@@ -1763,4 +1763,83 @@ html[dir="ltr"] {
     left: 15px;
     right: auto;
   }
+  .devo-products {
+    .products-content {
+      a {
+        .product-card {
+          div {
+            :last-child {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        .product-card:hover {
+          div {
+            :last-child {
+              i {
+                transform: translateX(10px) rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .devo-blog {
+    .blog-content {
+      a {
+        .blog-card {
+          div {
+            :last-child {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        .blog-card:hover {
+          div {
+            :last-child {
+              i {
+                transform: translateX(10px) rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .footer-content {
+      .single-footer {
+        .join-us {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .devo-notes {
+    .note-card {
+      div {
+        :last-child {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    .note-card:hover {
+      div {
+        :last-child {
+          i {
+            transform: translateX(10px) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
 }

@@ -1582,4 +1582,25 @@ html[dir=ltr] .mytimeline .block:before {
 html[dir=ltr] .mytimeline .block .each-event:before {
   left: 15px;
   right: auto;
+}
+html[dir=ltr] .devo-products .products-content a .product-card div :last-child i {
+  transform: rotate(180deg);
+}
+html[dir=ltr] .devo-products .products-content a .product-card:hover div :last-child i {
+  transform: translateX(10px) rotate(180deg);
+}
+html[dir=ltr] .devo-blog .blog-content a .blog-card div :last-child i {
+  transform: rotate(180deg);
+}
+html[dir=ltr] .devo-blog .blog-content a .blog-card:hover div :last-child i {
+  transform: translateX(10px) rotate(180deg);
+}
+html[dir=ltr] .footer .footer-content .single-footer .join-us i {
+  transform: rotate(180deg);
+}
+html[dir=ltr] .devo-notes .note-card div :last-child i {
+  transform: rotate(180deg);
+}
+html[dir=ltr] .devo-notes .note-card:hover div :last-child i {
+  transform: translateX(10px) rotate(180deg);
 }/*# sourceMappingURL=style.css.map */
